@@ -1,0 +1,20 @@
+{
+  "temas": [
+    {
+      "id": "grimm",
+      "n": "Grimm Troupe",
+      "p": 100,
+      "d": "Carmesí y sombras. Mascota y botones de la troupe.",
+      "hasta": null,
+      "v": {
+        "bg": "#0c0a12",
+        "card": "#171220",
+        "ink": "#efe6ea",
+        "ac": "#c41230",
+        "ac2": "#ff4d63"
+      },
+      "m": "tema-grimm.png",
+      "css": ".th-grimm .logo{color:var(--ac)}\n.th-grimm .b,.th-grimm .ch,.th-grimm .rc,.th-grimm .pn,.th-grimm .pc,.th-grimm .pill{border-radius:0}\n.th-grimm .b{border-color:var(--ac);box-shadow:3px 3px 0 #000}\n.th-grimm .b.on,.th-grimm .big,.th-grimm .ch.on{background:linear-gradient(#e0193a,#7d0a1c);color:#fff}\n.th-grimm .rb{clip-path:polygon(50% 0,100% 50%,50% 100%,0 50%);box-shadow:none}\n.th-grimm .mp button{color:#e01b34;text-shadow:0 0 4px #000,0 0 2px #000;font-weight:900}\n.th-grimm #mas{width:150%;right:-22%}"
+    }
+  ]
+}

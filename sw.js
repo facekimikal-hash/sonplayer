@@ -1,4 +1,4 @@
-const V='1.4.0',CORE='son-core-'+V,TEMAS='son-temas',EXT='son-ext';
+const V='1.4.1',CORE='son-core-'+V,TEMAS='son-temas',EXT='son-ext';
 const FILES=['./','./index.html','./manifest.json','./icon-192.png','./icon-512.png','./icon-maskable.png','./temas.json'];
 const JS='https://cdnjs.cloudflare.com/ajax/libs/jsmediatags/3.9.5/jsmediatags.min.js',FC='https://fonts.googleapis.com/css2?family=Bangers&family=Patrick+Hand&display=swap';
 self.addEventListener('install',e=>{e.waitUntil((async()=>{

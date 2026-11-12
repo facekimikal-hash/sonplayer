@@ -160,6 +160,47 @@ body.hm #toast{bottom:calc(150px + env(safe-area-inset-bottom,0px))}
 .er .tx{flex:1;min-width:0}.er .tx b,.er .tx small{display:block;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}.er .tx small{opacity:.65}
 .er button{all:unset;box-sizing:border-box;flex:none;width:36px;height:36px;display:grid;place-items:center;border:2px solid var(--ink);border-radius:9px;cursor:pointer;font-size:15px;color:var(--ink)}
 .er button:disabled{opacity:.25;cursor:default}
+
+#ftabs{display:flex;gap:8px;margin:0 0 14px}#ftabs .ch{flex:1;padding:0 6px}
+.phd{display:flex;gap:12px;align-items:center;justify-content:space-between}
+.pnm{flex:1;min-width:0}.pnm .t{font-size:34px;line-height:1;word-break:break-word}.pnm #pf_u{margin:4px 0 12px;word-break:break-all}.pnm .ch{min-height:34px;font-size:15px;padding:0 12px}
+.hl{border:0;border-top:3px solid var(--ink);margin:20px 0 14px}
+.ptabs{display:flex;gap:12px;margin-bottom:14px}.ptabs .ch{flex:1;min-height:46px;font-size:22px}
+.pfp{all:unset;box-sizing:border-box;position:relative;display:grid;place-items:center;flex:none;width:130px;height:130px;margin:10px 12px 10px 0;border-radius:50%;border:3px solid var(--ink);background:var(--card) center/cover no-repeat;background-origin:border-box;color:var(--ink);font:62px/1 Bangers,Impact,sans-serif;cursor:pointer}
+.pfp.sm{width:64px;height:64px;margin:6px;font-size:30px}
+.pfp::before{content:"";position:absolute;inset:-9px;border-radius:50%;pointer-events:none}.pfp.sm::before{inset:-6px}
+.fr-none{border-color:transparent}.fr-none::before{display:none}
+.fr-ink::before{border:6px solid var(--ink)}.fr-dots::before{border:6px dotted var(--ac)}
+.fr-sun::before,.fr-gold::before,.fr-troupe::before{-webkit-mask:radial-gradient(farthest-side,transparent calc(100% - 8px),#000 calc(100% - 7px));mask:radial-gradient(farthest-side,transparent calc(100% - 8px),#000 calc(100% - 7px))}
+.fr-sun::before{background:repeating-conic-gradient(var(--ink) 0 8deg,var(--ac2) 8deg 16deg)}
+.fr-gold::before{background:conic-gradient(#fff2a8,#d9a400,#fff2a8,#a87500,#fff2a8)}
+.fr-troupe::before{background:conic-gradient(#c41230,#2a0710,#ff4d63,#2a0710,#c41230);filter:drop-shadow(0 0 6px #c41230)}
+.fa{display:inline-flex;align-items:center;gap:8px;padding:5px 12px;border:2px solid var(--ink);border-radius:999px;margin:0 6px 8px 0}
+.fa button{all:unset;cursor:pointer;font-weight:700;padding:0 2px}
+.addr{display:flex;gap:8px;margin-top:6px}.addr input{flex:1;min-width:0;margin:0}.addr .b{width:auto;flex:none;padding:0 14px;min-height:42px}
+.tp{display:flex;gap:12px;align-items:center;padding:8px 0;border-top:1px solid var(--dot)}
+.tp .rk{font:30px Bangers,Impact,sans-serif;width:30px;color:var(--ac);text-align:center}
+.tp .tx{flex:1;min-width:0}.tp .tx b,.tp .tx small{display:block;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}.tp .tx small{opacity:.65}
+.stats{display:grid;grid-template-columns:1fr 1fr;gap:10px}
+.st{border:2px solid var(--ink);border-radius:14px;padding:12px 8px;text-align:center}.st b{display:block;font:28px Bangers,Impact,sans-serif;letter-spacing:1px;font-weight:400}.st small{opacity:.7}
+.frd{all:unset;box-sizing:border-box;width:100%;display:flex;align-items:center;gap:10px;padding:6px 0;border-top:1px solid var(--dot);cursor:pointer;color:var(--ink)}
+.frd .tx{flex:1;min-width:0}.frd .tx b,.frd .tx small{display:block;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}.frd .tx small{opacity:.65}
+.tabs2{display:flex;gap:8px;flex-wrap:wrap;margin-bottom:12px}.tabs2 .ch{flex:1;padding:0 8px;font-size:16px}
+.trd{width:100%;margin:0 0 12px;opacity:.55;cursor:default}
+.ir{display:flex;align-items:center;gap:10px;padding:9px 0;border-top:1px solid var(--dot)}
+.ir .tx{flex:1;min-width:0}.ir .tx b,.ir .tx small{display:block}.ir .tx small{opacity:.65}
+.ir .b{width:auto;min-height:38px;padding:0 14px;font-size:16px;flex:none}.ir .b:disabled{opacity:.5}
+.swt{width:54px;height:38px;border:2px solid var(--ink);flex:none}
+.grid3{display:grid;grid-template-columns:repeat(3,1fr);gap:10px}
+.cell{all:unset;box-sizing:border-box;display:flex;flex-direction:column;align-items:center;gap:4px;padding:10px 4px;text-align:center;border:2px solid var(--dot);border-radius:14px;cursor:pointer;color:var(--ink)}
+.cell b{font:17px Bangers,Impact,sans-serif;letter-spacing:.5px;font-weight:400}.cell small{opacity:.7;font-size:11px;line-height:1.2}
+.cell.sel2{border-color:var(--ac);box-shadow:0 0 0 2px var(--ac)}.cell.lk{opacity:.5}
+.cell img{width:100%;height:84px;object-fit:contain}.cell.lk img{filter:grayscale(1) brightness(.8)}
+.bd{display:flex;gap:12px;align-items:center;padding:9px 0;border-top:1px solid var(--dot)}
+.bd .md{width:44px;height:44px;border-radius:50%;display:grid;place-items:center;font-size:22px;background:var(--ac2);border:2px solid var(--ink);flex:none}
+.bd.lk{opacity:.45;filter:grayscale(1)}.bd .tx{flex:1;min-width:0}.bd .tx b,.bd .tx small{display:block}.bd .tx small{opacity:.7}
+.phd2{display:flex;align-items:center;gap:12px;margin-bottom:8px}.phd2 .t{font-size:28px;line-height:1}
+.b.arm{background:#d62a2a;color:#fff}
 </style><script src="https://cdnjs.cloudflare.com/ajax/libs/jsmediatags/3.9.5/jsmediatags.min.js"></script><style id="thcss"></style></head><body><div class="wrap"><div class="frame">
 <header class="hd"><div class="logo">SON<small>PLAYER</small></div><div class="vin"></div><button class="men lup" id="lp" aria-label="Buscar"><svg viewBox="0 0 24 24" width="24" height="24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" aria-hidden="true"><circle cx="10" cy="10" r="6.5"/><path d="M15 15l6 6"/></svg></button><button class="men" aria-label="Menú" onclick="mn.hidden=false"></button></header>
 <main>
@@ -181,11 +222,16 @@ body.hm #toast{bottom:calc(150px + env(safe-area-inset-bottom,0px))}
 <div class="pn"><h3>Efectos</h3><p class="sub">Dale más vida a tu reproductor</p>
 <label class="sw"><span>Brillo en la canción que suena</span><input type="checkbox" id="gon"></label>
 <label class="sw"><span>Color del brillo</span><input type="color" id="gcol"></label>
-<label class="sw" id="monr"><span>Mostrar personaje del tema</span><input type="checkbox" id="mon"></label></div>
+<label class="sw" id="monr"><span>Mostrar personaje</span><input type="checkbox" id="mon"></label></div>
 <div class="pn"><h3>Orden de las canciones</h3><p class="sub">Cómo se acomodan en tu lista</p><div class="pre2" id="sor"></div></div>
 <div class="pn"><h3>Biblioteca</h3><p class="sub" id="lib"></p><button class="b sm" id="rsc" style="margin-bottom:8px">Escanear carpetas guardadas</button><button class="b sm" id="dd">Quitar canciones repetidas</button><button class="b sm" id="hdb" style="margin-top:8px">Actualizar álbum y carátulas</button><label class="sw" style="margin-top:8px"><span>Ignorar audios cortos (menos de 1 MB: tonos, notas de voz)</span><input type="checkbox" id="skc"></label></div>
 <div class="pn"><h3>App</h3><p class="sub" id="ver"></p><button class="b sm" id="inst" hidden>Instalar app</button><button class="b sm" id="upc" style="margin-top:8px">Buscar actualización</button></div>
 </section>
+<section id="f" hidden><div id="ftabs"></div>
+<div class="phd"><div class="pnm"><div class="t" id="pf_n">NOMBRE</div><div id="pf_u">@username</div><button class="ch" id="pf_e">✎ EDITAR PERFIL</button></div><button class="pfp" id="pf_a" aria-label="Foto de perfil"><span></span></button></div>
+<hr class="hl">
+<div class="ptabs"><button class="ch on" id="pt_s">SOBRE MÍ</button><button class="ch" id="pt_i">INV</button></div>
+<div id="pc_s"></div><div id="pc_i" hidden></div></section>
 </main>
 <div id="mini" hidden><div id="mbar"><i id="mfill"></i></div><button class="mo" id="mo" aria-label="Abrir reproductor"><img id="mimg" alt="" hidden><span class="mph" id="mph">♪</span><span class="mt"><b id="mti"></b><small id="mar"></small></span></button><button class="b" id="mpp" aria-label="Reproducir o pausar">▶</button><button class="b" id="mnx" aria-label="Siguiente">⏭</button><button class="b" id="mq" aria-label="Cola">≡<span id="mqn" hidden>0</span></button></div>
 <div id="selbar" hidden><div class="sr"><b id="sa_c">0 seleccionadas</b><button class="b" id="sa_all">TODAS</button><button class="b" id="sa_x" aria-label="Salir de la selección">✕</button></div><div class="sa"><button class="b" id="sa_nx">SIGUIENTE</button><button class="b" id="sa_q">COLA</button><button class="b" id="sa_ls">LISTA</button><button class="b" id="sa_dl">ELIMINAR</button></div></div>
@@ -201,6 +247,15 @@ body.hm #toast{bottom:calc(150px + env(safe-area-inset-bottom,0px))}
  <div class="row"><button class="b big" id="sv2">GUARDAR</button><button class="b" id="cn">CANCELAR</button></div><button class="b" id="dl" style="width:100%;margin-top:12px">ELIMINAR CANCIÓN</button>
 </div></div>
 <div class="ov" id="pd" hidden onclick="if(event.target==this)this.hidden=true"><div class="box dlg"><div class="t" id="pdt" style="font-size:26px"></div><div id="pdl"></div><label>Crear lista nueva<input id="pnm" maxlength="30" placeholder="Nombre de la lista"></label><button class="b big" id="pa" style="width:100%">CREAR</button><button class="b" id="pdc" style="width:100%;margin-top:10px">CERRAR</button></div></div>
+<div class="ov" id="pe" hidden><div class="box dlg"><div class="t" style="font-size:26px">EDITAR PERFIL</div>
+<div style="display:flex;justify-content:center;margin:18px 0 14px"><div class="pfp" id="pe_a"><span></span></div></div>
+<div class="row"><button class="b" id="pe_f">ELEGIR FOTO</button><button class="b" id="pe_x">QUITAR</button></div><input type="file" id="pe_file" accept="image/*" hidden>
+<label>Nombre<input id="pe_n" maxlength="20" placeholder="Tu nombre" autocomplete="off"></label>
+<label>Usuario<input id="pe_u" maxlength="20" placeholder="usuario" autocapitalize="none" autocomplete="off" spellcheck="false"></label>
+<button class="b big" id="pe_s" style="width:100%;margin-top:6px">GUARDAR</button><button class="b" id="pe_c" style="width:100%;margin-top:10px">CERRAR</button></div></div>
+<div class="ov" id="qm" hidden><div class="box dlg" style="text-align:center"><div class="t" style="font-size:26px">MI QR</div><canvas id="qm_c" width="300" height="300" style="width:100%;max-width:300px;height:auto;background:#fff;border:3px solid var(--ink);margin:10px 0"></canvas><p class="sub">Pídele a tu amigo que lo escanee con SON PLAYER. Sube el brillo de tu pantalla.</p><button class="b big" id="qm_x" style="width:100%">CERRAR</button></div></div>
+<div class="ov" id="qs" hidden><div class="box dlg"><div class="t" style="font-size:26px">ESCANEAR QR</div><video id="qs_v" playsinline muted style="width:100%;max-height:50dvh;background:#000;object-fit:cover;margin-top:8px"></video><p class="sub" id="qs_t" style="margin:8px 0">Apunta al QR de tu amigo</p><div class="row"><button class="b" id="qs_i">ELEGIR IMAGEN</button><button class="b big" id="qs_x">CERRAR</button></div><input type="file" id="qs_f" accept="image/*" hidden></div></div>
+<div class="ov" id="fd2" hidden><div class="box dlg"><div id="fd2_b"></div><button class="b" id="fd2_d" style="width:100%;margin-top:12px">ELIMINAR AMIGO</button><button class="b big" id="fd2_x" style="width:100%;margin-top:10px">CERRAR</button></div></div>
 <div class="ov" id="qd" hidden><div class="box dlg"><div class="t" style="font-size:26px">COLA</div><p class="sub" id="qnow" style="margin:2px 0 8px"></p><div id="qls" class="ers"></div><div class="row" style="margin-top:12px"><button class="b" id="qcl">VACIAR</button><button class="b big" id="qx2">LISTO</button></div></div></div>
 <div class="ov" id="ad" hidden><div class="box dlg"><div class="t" style="font-size:26px">AGREGAR A LISTA</div><div id="ad_l" style="display:grid;gap:8px;margin:10px 0"></div><label>Nueva lista<input id="ad_n" maxlength="30" placeholder="Nombre de la lista"></label><button class="b big" id="ad_b" style="width:100%">CREAR Y AGREGAR</button><button class="b" id="ad_c" style="width:100%;margin-top:10px">CERRAR</button></div></div>
 <div class="ov" id="le" hidden><div class="box dlg"><div class="t" style="font-size:26px">EDITAR LISTA</div><label>Nombre<input id="lnm" maxlength="30"></label><div id="lsg" class="ers"></div><button class="b big" id="lok" style="width:100%;margin-top:12px">LISTO</button></div></div>
@@ -216,19 +271,20 @@ const mix=(a,b,t)=>'#'+hx(a).map((v,i)=>Math.round(v+(hx(b)[i]-v)*t).toString(16
 const PRE=[['Manga',{bg:'#f1f1f4',card:'#ffffff',ink:'#0c0c12',ac:'#2f5bff',ac2:'#ffd60a'}],['Noche',{bg:'#14141f',card:'#1f1f2e',ink:'#f2f0ff',ac:'#7c6cff',ac2:'#ffd166'}],['B/N',{bg:'#ffffff',card:'#ffffff',ink:'#000000',ac:'#000000',ac2:'#d9d9d9'}]];
 const PK=[['bg','Fondo'],['card','Tarjetas'],['ink','Texto y líneas'],['ac','Acento'],['ac2','Acento 2']];
 /* ===== TEMAS DE PAGO: para añadir uno, copia el bloque (id, nombre, precio p, colores v, mascota m) ===== */
-const TH=[];let CAT=ld('cat',[]);
+const TH=[];let CAT=ld('cat',[]),CATM=ld('catm',[]);
 function mergeTH(){const m={};(S.ot||[]).forEach(t=>m[t.id]=t);CAT.forEach(t=>m[t.id]=Object.assign({},m[t.id],t));TH.length=0;Object.values(m).forEach(t=>TH.push(t))}
 const inShop=t=>CAT.some(c=>c.id==t.id)&&(!t.hasta||new Date(t.hasta+'T23:59:59')>=new Date());
 function keep(t){try{caches.open('son-temas').then(c=>c.add(t.m)).catch(()=>{})}catch(e){}}
-async function loadCat(){try{const r=await fetch('temas.json',{cache:'no-cache'});if(!r.ok)return;const j=await r.json();CAT=j.temas||[];try{localStorage.setItem('cat',JSON.stringify(CAT))}catch(e){}
- (S.ow||[]).forEach(id=>{const c=CAT.find(t=>t.id==id);if(c&&!S.ot.some(t=>t.id==id)){S.ot.push(JSON.parse(JSON.stringify(c)));keep(c)}});sv();mergeTH();theme();shop()}catch(e){}}
+async function loadCat(){try{const r=await fetch('temas.json',{cache:'no-cache'});if(!r.ok)return;const j=await r.json();CAT=j.temas||[];CATM=j.mascotas||[];try{localStorage.setItem('cat',JSON.stringify(CAT));localStorage.setItem('catm',JSON.stringify(CATM))}catch(e){}
+ (S.ow||[]).forEach(id=>{const c=CAT.find(t=>t.id==id);if(c&&!S.ot.some(t=>t.id==id)){S.ot.push(JSON.parse(JSON.stringify(c)));keep(c)}});sv();mergeTH();theme();shop();if(VW=='f')renderProfile()}catch(e){}}
 const M0=$('#mas').getAttribute('src');
-let S=Object.assign({coins:0,sec:0,meta:{},fv:{},pc:{},pl:[],md:0,ow:[],tid:'',ot:[],so:'add',sk:1,q:[]},ld('sp',{}));S.cfg=Object.assign({},PRE[0][1],{glow:false,gl:'#ff3bd4',mas:false},S.cfg);if(!S.mi){S.cfg.mas=false;S.mi=1}
+let S=Object.assign({coins:0,sec:0,meta:{},fv:{},pc:{},pl:[],md:0,ow:[],tid:'',ot:[],so:'add',sk:1,q:[],tt:0,bd:[],fr:[],mc:''},ld('sp',{}));S.cfg=Object.assign({},PRE[0][1],{glow:false,gl:'#ff3bd4',mas:false},S.cfg);if(!S.mi){S.cfg.mas=false;S.mi=1}
+S.pf=Object.assign({id:'',n:'',u:'',av:'',fr:'ink',fa:[]},S.pf);if(!S.pf.id)S.pf.id=Math.random().toString(36).slice(2,10)+Date.now().toString(36).slice(-4);
 const sv=()=>{try{localStorage.setItem('sp',JSON.stringify(S))}catch(e){toast('No hay espacio para guardar')}};
 function toast(m){const e=$('#toast');e.textContent=m;e.hidden=false;clearTimeout(toast.t);toast.t=setTimeout(()=>e.hidden=true,2200)}
 function theme(){const P=TH.find(x=>x.id==S.tid),c=P?Object.assign({},S.cfg,P.v):S.cfg,d=lum(c.bg)<.45,set=(k,v)=>document.documentElement.style.setProperty('--'+k,v);
  ['bg','card','ink','ac','ac2'].forEach(k=>set(k,c[k]));set('dot',mix(c.bg,c.ink,.13));set('on',lum(c.ac)>.6?'#111':'#fff');set('on2',lum(c.ac2)>.6?'#111':'#fff');set('gl',c.gl);
- set('mb',P?'normal':d?'screen':'multiply');set('mf',P||!d?'none':'invert(1)');$('#mas').src=P?P.m:M0;$('#thcss').textContent=P&&P.css||'';TH.forEach(t=>document.body.classList.toggle('th-'+t.id,S.tid==t.id));set('mas',c.mas&&P?'block':'none');$('#monr').hidden=!P;document.body.classList.toggle('glow',!!c.glow)}
+ const MS=mascotNow();set('mb','normal');set('mf','none');$('#mas').src=MS||M0;$('#thcss').textContent=P&&P.css||'';TH.forEach(t=>document.body.classList.toggle('th-'+t.id,S.tid==t.id));set('mas',c.mas&&MS?'block':'none');$('#monr').hidden=!MS;document.body.classList.toggle('glow',!!c.glow)}
 const coins=()=>$('#coins').textContent='🪙 '+S.coins;
 
 const A=new Audio();let L=[],cur=-1,LY=[];
@@ -289,7 +345,7 @@ function openSearch(){const b=$('#sbx');if(!b.hidden&&!$('#l').hidden)return clo
 function closeSearch(){$('#sbx').hidden=true;$('#q').value='';list()}
 const SO=[['add','Como las agregué'],['new','Más nuevas primero'],['az','Título A–Z'],['art','Artista A–Z']];
 function vlist(v){if(v=='all'||v=='lists')return sortL(L);if(v=='fav')return sortL(L).filter(t=>S.fv[t.key]);if(v=='top')return L.filter(t=>S.pc[t.key]>0).sort((a,b)=>S.pc[b.key]-S.pc[a.key]).slice(0,50);const p=S.pl.find(x=>x.id==v);return p?p.k.map(k=>L.find(t=>t.key==k)).filter(Boolean):L}
-function bar(){const b=$('#pbar');b.innerHTML='';[['all','CANCIONES'],['lists','LISTAS']].forEach(([id,n])=>{const x=document.createElement('button');x.className='ch'+((id=='all')==(V=='all')?' on':'');x.textContent=n;x.onclick=()=>{V=id;S.v=id;sv();bar();list()};b.append(x)})}
+function bar(){['#pbar','#ftabs'].forEach(sel=>{const b=$(sel);b.innerHTML='';[['all','CANCIONES'],['lists','LISTAS'],['perfil','PERFIL']].forEach(([id,n])=>{const x=document.createElement('button'),on=id=='perfil'?VW=='f':(VW!='f'&&((id=='all')==(V=='all')));x.className='ch'+(on?' on':'');x.textContent=n;x.onclick=()=>{if(id=='perfil'){go('f');return}V=id;S.v=id;sv();go('l');bar();list()};b.append(x)})})}
 function idx(b){[['fav','♥ Favoritas'],['top','★ Más reproducidas'],...S.pl.map(p=>[p.id,'♪ '+p.n])].forEach(([id,n])=>{const c=vlist(id).length,d=document.createElement('div');d.className='rc li';d.innerHTML='<div class="n"></div><div class="a"></div>';d.querySelector('.n').textContent=n;d.querySelector('.a').textContent=c+(c==1?' canción':' canciones');d.onclick=()=>{V=id;S.v=id;sv();bar();list()};b.append(d)});
  const n=document.createElement('button');n.className='b sm';n.textContent='+ Nueva lista';n.onclick=()=>openPd(0);b.append(n)}
 function list(){const SQ=sq(),b=$('#lst'),q=SQ?search(SQ):vlist(V),nm=({all:'Todas',fav:'Favoritas',top:'Más reproducidas'})[V]||(S.pl.find(p=>p.id==V)||{}).n||'';
@@ -325,12 +381,12 @@ function step(d){if(d>0){const t=popQ();if(t){play(L.indexOf(t),1);return}}
  const q=Q();if(!q.length)return;const ref=BASE&&q.includes(BASE)?BASE:L[cur],i=q.indexOf(ref);if(S.md==1&&q.length>1){let j;do j=Math.floor(Math.random()*q.length);while(j==i);play(L.indexOf(q[j]))}else play(L.indexOf(q[(i+d+q.length)%q.length]))}
 const nx=()=>step(1),pv=()=>A.currentTime>3?play(cur):step(-1);
 $('#pp').onclick=()=>{if(cur<0)return toast('Agrega música primero');A.paused?A.play():A.pause()};
-$('#nx').onclick=nx;$('#pv').onclick=pv;A.onended=()=>{const t=L[cur];if(t){S.pc[t.key]=(S.pc[t.key]||0)+1;sv()}if(S.md==2){A.currentTime=0;A.play()}else nx()};
+$('#nx').onclick=nx;$('#pv').onclick=pv;A.onended=()=>{const t=L[cur];if(t){S.pc[t.key]=(S.pc[t.key]||0)+1;sv();chkBadges()}if(S.md==2){A.currentTime=0;A.play()}else nx()};
 $('#sk').oninput=e=>{if(A.duration)A.currentTime=e.target.value/1000*A.duration};
 try{const m=navigator.mediaSession;m.setActionHandler('play',()=>A.play());m.setActionHandler('pause',()=>A.pause());m.setActionHandler('nexttrack',nx);m.setActionHandler('previoustrack',pv);m.setActionHandler('seekto',d=>{A.currentTime=d.seekTime});m.setActionHandler('stop',()=>{A.pause();A.currentTime=0})}catch(e){}
 
 /* monedas: 1 por cada minuto reproduciendo */
-let lt=Date.now();setInterval(()=>{const n=Date.now(),dt=Math.min((n-lt)/1000,65);lt=n;if(!A.paused&&!A.ended){S.sec+=dt;let g=0;while(S.sec>=60){S.sec-=60;S.coins++;g++}if(g){toast('🪙 +'+g+(g>1?' monedas':' moneda'));coins();shop()}if(Math.floor(S.sec)%10==0)pr()}},1000);
+let lt=Date.now(),BT=0;setInterval(()=>{const n=Date.now(),dt=Math.min((n-lt)/1000,65);lt=n;if(!A.paused&&!A.ended){S.sec+=dt;S.tt=(S.tt||0)+dt;if(++BT%10==0)chkBadges();let g=0;while(S.sec>=60){S.sec-=60;S.coins++;g++}if(g){toast('🪙 +'+g+(g>1?' monedas':' moneda'));coins();shop()}if(Math.floor(S.sec)%10==0)pr()}},1000);
 
 /* editar canción */
 let pcb=null;
@@ -353,7 +409,7 @@ function shop(){const s=$('#sh');s.innerHTML='';const q=TH.filter(t=>S.ow.includ
  const b=d.querySelector('button');b.textContent=S.tid==t.id?'EN USO':own?'USAR':'COMPRAR';
  b.onclick=()=>{if(!own){if(S.coins<t.p)return toast('Te faltan '+(t.p-S.coins)+' monedas');S.coins-=t.p;S.ow.push(t.id);S.ot=S.ot.filter(x=>x.id!=t.id).concat([JSON.parse(JSON.stringify(t))]);keep(t)}S.tid=t.id;S.cfg.mas=true;sv();theme();coins();shop();cfgUI()};s.append(d)})}
 
-function go(v){VW=v;if(v!='l'&&SM){SM=false;SEL.clear()}['p','l','s','c'].forEach(k=>$('#'+k).hidden=k!=v);if(v=='l')sbar();if(v=='c')cfgUI();minivis()}
+function go(v){VW=v;if(v!='l'&&SM){SM=false;SEL.clear()}['p','l','s','c','f'].forEach(k=>$('#'+k).hidden=k!=v);if(v=='l')sbar();if(v=='c')cfgUI();if(v=='f')renderProfile();minivis();bar()}
 const LST=$('#lst'),TK=$('#tk'),HD=$('#hdl');
 function sbar(){const r=LST.scrollHeight-LST.clientHeight,th=TK.clientHeight-HD.offsetHeight;HD.style.visibility=r>2?'visible':'hidden';HD.style.top=(r>0&&th>0?LST.scrollTop/r*th:0)+'px'}
 LST.onscroll=sbar;addEventListener('resize',sbar);
@@ -453,7 +509,170 @@ function leUI(){const p=S.pl.find(x=>x.id==V);if(!p)return;const b=$('#lsg');b.i
  ts.forEach((t,i)=>{const x=T(t);b.append(erow((i+1)+'. '+x.t,x.a,[['▲','Subir',i>0?()=>{mv(p.k,i,-1);ch()}:null],['▼','Bajar',i<ts.length-1?()=>{mv(p.k,i,1);ch()}:null],['✕','Quitar de la lista',()=>{p.k.splice(i,1);ch()}]]))})}
 function leClose(){const p=S.pl.find(x=>x.id==V);if(p){p.n=$('#lnm').value.trim()||p.n;sv()}$('#le').hidden=true;bar();list()}
 $('#lok').onclick=leClose;$('#le').onclick=e=>{if(e.target==e.currentTarget)leClose()};
-const VER='1.3';$('#lp').onclick=openSearch;$('#qx').onclick=closeSearch;$('#q').oninput=()=>list();$('#ver').textContent='SON PLAYER · versión '+VER;
+/* ===== v1.4: perfil, inventario, insignias, amigos por QR ===== */
+/* Generador de QR (modo byte, corrección L, versiones 1-25). Basado en el algoritmo estándar. */
+const QR=(()=>{
+const ECCL=[-1,7,10,15,20,26,18,20,24,30,18,20,24,26,30,22,24,28,30,28,28,28,28,30,30,26];
+const BLKL=[-1,1,1,1,1,1,2,2,2,2,4,4,4,4,4,6,6,6,6,7,8,8,9,9,10,12];
+const rawMods=v=>{let r=(16*v+128)*v+64;if(v>=2){const n=Math.floor(v/7)+2;r-=(25*n-10)*n-55;if(v>=7)r-=36}return r};
+const gmul=(x,y)=>{let z=0;for(let i=7;i>=0;i--){z=(z<<1)^((z>>>7)*0x11D);z^=((y>>>i)&1)*x}return z};
+const rsDiv=d=>{const r=[];for(let i=0;i<d-1;i++)r.push(0);r.push(1);let root=1;for(let i=0;i<d;i++){for(let j=0;j<r.length;j++){r[j]=gmul(r[j],root);if(j+1<r.length)r[j]^=r[j+1]}root=gmul(root,2)}return r};
+const rsRem=(data,div)=>{const r=div.map(()=>0);for(const b of data){const f=b^r.shift();r.push(0);div.forEach((c,i)=>r[i]^=gmul(c,f))}return r};
+const bit=(x,i)=>((x>>>i)&1)!=0;
+function encode(text){
+ const data=Array.from(new TextEncoder().encode(text));
+ let ver=0,cap=0;
+ for(let v=1;v<=25;v++){const dc=Math.floor(rawMods(v)/8)-ECCL[v]*BLKL[v];if(4+(v<=9?8:16)+data.length*8<=dc*8){ver=v;cap=dc;break}}
+ if(!ver)return null;
+ const bits=[],put=(v,n)=>{for(let i=n-1;i>=0;i--)bits.push((v>>>i)&1)};
+ put(4,4);put(data.length,ver<=9?8:16);data.forEach(b=>put(b,8));
+ put(0,Math.min(4,cap*8-bits.length));put(0,(8-bits.length%8)%8);
+ for(let p=0xEC;bits.length<cap*8;p^=0xEC^0x11)put(p,8);
+ const cw=[];for(let i=0;i<bits.length;i+=8)cw.push(parseInt(bits.slice(i,i+8).join(''),2));
+ const nb=BLKL[ver],el=ECCL[ver],raw=Math.floor(rawMods(ver)/8),ns=nb-raw%nb,sl=Math.floor(raw/nb),div=rsDiv(el),blocks=[];
+ for(let i=0,k=0;i<nb;i++){const d=cw.slice(k,k+sl-el+(i<ns?0:1));k+=d.length;const e=rsRem(d,div);if(i<ns)d.push(0);blocks.push(d.concat(e))}
+ const all=[];for(let i=0;i<blocks[0].length;i++)blocks.forEach((b,j)=>{if(i!=sl-el||j>=ns)all.push(b[i])});
+ const size=ver*4+17,M=[],F=[];for(let y=0;y<size;y++){M.push(new Array(size).fill(false));F.push(new Array(size).fill(false))}
+ const setFn=(x,y,d)=>{M[y][x]=d;F[y][x]=true};
+ for(let i=0;i<size;i++){setFn(6,i,i%2==0);setFn(i,6,i%2==0)}
+ const finder=(x,y)=>{for(let dy=-4;dy<=4;dy++)for(let dx=-4;dx<=4;dx++){const d=Math.max(Math.abs(dx),Math.abs(dy)),xx=x+dx,yy=y+dy;if(xx>=0&&xx<size&&yy>=0&&yy<size)setFn(xx,yy,d!=2&&d!=4)}};
+ finder(3,3);finder(size-4,3);finder(3,size-4);
+ let ap=[];if(ver>1){const n=Math.floor(ver/7)+2,st=ver==32?26:Math.ceil((ver*4+4)/(n*2-2))*2;ap=[6];for(let p=size-7;ap.length<n;p-=st)ap.splice(1,0,p)}
+ const n=ap.length;
+ for(let i=0;i<n;i++)for(let j=0;j<n;j++){if((i==0&&j==0)||(i==0&&j==n-1)||(i==n-1&&j==0))continue;for(let dy=-2;dy<=2;dy++)for(let dx=-2;dx<=2;dx++)setFn(ap[i]+dx,ap[j]+dy,Math.max(Math.abs(dx),Math.abs(dy))!=1)}
+ const fmt=mask=>{const d=(1<<3)|mask;let r=d;for(let i=0;i<10;i++)r=(r<<1)^((r>>>9)*0x537);const b=((d<<10)|r)^0x5412;
+  for(let i=0;i<=5;i++)setFn(8,i,bit(b,i));setFn(8,7,bit(b,6));setFn(8,8,bit(b,7));setFn(7,8,bit(b,8));for(let i=9;i<15;i++)setFn(14-i,8,bit(b,i));
+  for(let i=0;i<8;i++)setFn(size-1-i,8,bit(b,i));for(let i=8;i<15;i++)setFn(8,size-15+i,bit(b,i));setFn(8,size-8,true)};
+ fmt(0);
+ if(ver>=7){let r=ver;for(let i=0;i<12;i++)r=(r<<1)^((r>>>11)*0x1F25);const b=(ver<<12)|r;for(let i=0;i<18;i++){const v=bit(b,i),a=size-11+i%3,c=Math.floor(i/3);setFn(a,c,v);setFn(c,a,v)}}
+ let i=0;
+ for(let right=size-1;right>=1;right-=2){if(right==6)right=5;for(let vert=0;vert<size;vert++)for(let j=0;j<2;j++){const x=right-j,up=((right+1)&2)==0,y=up?size-1-vert:vert;if(!F[y][x]&&i<all.length*8){M[y][x]=bit(all[i>>>3],7-(i&7));i++}}}
+ const mask=m=>{for(let y=0;y<size;y++)for(let x=0;x<size;x++){let inv;switch(m){case 0:inv=(x+y)%2==0;break;case 1:inv=y%2==0;break;case 2:inv=x%3==0;break;case 3:inv=(x+y)%3==0;break;case 4:inv=(Math.floor(x/3)+Math.floor(y/2))%2==0;break;case 5:inv=x*y%2+x*y%3==0;break;case 6:inv=(x*y%2+x*y%3)%2==0;break;default:inv=((x+y)%2+x*y%3)%2==0}if(!F[y][x]&&inv)M[y][x]=!M[y][x]}};
+ const pen=()=>{let s=0;const rows=[],cols=[];
+  for(let y=0;y<size;y++){rows.push(M[y].map(v=>v?'1':'0').join(''));}
+  for(let x=0;x<size;x++){let c='';for(let y=0;y<size;y++)c+=M[y][x]?'1':'0';cols.push(c)}
+  for(const l of rows.concat(cols)){const m=l.match(/0{5,}|1{5,}/g);if(m)m.forEach(r=>s+=r.length-2);const f=l.match(/(?=10111010000|00001011101)/g);if(f)s+=f.length*40}
+  for(let y=0;y<size-1;y++)for(let x=0;x<size-1;x++){const c=M[y][x];if(c==M[y][x+1]&&c==M[y+1][x]&&c==M[y+1][x+1])s+=3}
+  let dark=0;M.forEach(r=>r.forEach(v=>{if(v)dark++}));s+=Math.floor(Math.abs(dark*20-size*size*10)/(size*size))*10;return s};
+ let best=0,bp=1e9;for(let m=0;m<8;m++){mask(m);fmt(m);const p=pen();if(p<bp){bp=p;best=m}mask(m)}
+ mask(best);fmt(best);
+ return{size,ver,get:(x,y)=>M[y][x]};
+}
+function draw(cv,text){const q=encode(text);if(!q)return false;const quiet=4,scale=Math.max(2,Math.floor(640/(q.size+quiet*2))),px=(q.size+quiet*2)*scale;cv.width=cv.height=px;const c=cv.getContext('2d');c.fillStyle='#fff';c.fillRect(0,0,px,px);c.fillStyle='#000';
+ for(let y=0;y<q.size;y++)for(let x=0;x<q.size;x++)if(q.get(x,y))c.fillRect((x+quiet)*scale,(y+quiet)*scale,scale,scale);return true}
+return{encode,draw};
+})();
+
+const MK=(t,c,x)=>{const e=document.createElement(t);if(c)e.className=c;if(x!=null)e.textContent=x;return e};
+let PT='s',IT='temas',PEPH,QST=null,QSTOP=false,LASTBAD='';
+const fmtT=s=>{s=Math.floor(s||0);if(s<60)return s+' s';const m=Math.floor(s/60);if(m<60)return m+' min';return Math.floor(m/60)+' h '+String(m%60).padStart(2,'0')+' min'};
+const pcSum=()=>Object.values(S.pc).reduce((a,b)=>a+b,0);
+function topSongs(){return L.filter(t=>S.pc[t.key]>0).sort((a,b)=>S.pc[b.key]-S.pc[a.key]).slice(0,3).map(t=>{const x=T(t);return{t:x.t,a:x.a,n:S.pc[t.key]}})}
+const BDG=[
+{id:'first',n:'Primer acorde',d:'Escucha una canción completa',ok:()=>pcSum()>=1},
+{id:'h1',n:'Una hora',d:'1 hora de música en la app',ok:()=>(S.tt||0)>=3600},
+{id:'h10',n:'Diez horas',d:'10 horas de música en la app',ok:()=>(S.tt||0)>=36000},
+{id:'lib25',n:'Coleccionista',d:'25 canciones en tu biblioteca',ok:()=>L.length>=25},
+{id:'lib100',n:'Archivista',d:'100 canciones en tu biblioteca',ok:()=>L.length>=100},
+{id:'pl3',n:'Curador',d:'Crea 3 listas',ok:()=>S.pl.length>=3},
+{id:'fav10',n:'Corazón de oro',d:'Marca 10 favoritas',ok:()=>Object.keys(S.fv).length>=10},
+{id:'th1',n:'Estilo propio',d:'Compra un tema',ok:()=>S.ow.length>=1},
+{id:'fr1',n:'Amistad',d:'Agrega un amigo con QR',ok:()=>S.fr.length>=1},
+{id:'fr3',n:'Troupe',d:'Agrega 3 amigos',ok:()=>S.fr.length>=3}];
+const FRM=[{id:'none',n:'Sin marco'},{id:'ink',n:'Tinta'},{id:'dots',n:'Trama',req:'ins:first'},{id:'sun',n:'Rayos',req:'ins:h1'},{id:'gold',n:'Dorado',req:'ins:lib25'},{id:'troupe',n:'Troupe',req:'tema:grimm'}];
+function reqOK(r){if(!r)return true;const[k,v]=r.split(':');return k=='ins'?S.bd.includes(v):k=='tema'?S.ow.includes(v):true}
+function reqTxt(r){const[k,v]=(r||'').split(':');if(k=='ins'){const b=BDG.find(x=>x.id==v);return 'Insignia: '+(b?b.n:v)}if(k=='tema'){const t=TH.find(x=>x.id==v)||CAT.find(x=>x.id==v);return 'Tema: '+(t?t.n:v)}return ''}
+function chkBadges(){const nw=[];BDG.forEach(b=>{if(!S.bd.includes(b.id)&&b.ok()){S.bd.push(b.id);nw.push(b.n)}});if(nw.length){sv();toast('🏅 '+(nw.length==1?'Nueva insignia: '+nw[0]:nw.length+' insignias nuevas'));if(VW=='f')renderProfile()}}
+function mascotNow(){const o=S.mc&&CATM.find(m=>m.id==S.mc);if(o&&reqOK(o.req))return o.m;const P=TH.find(x=>x.id==S.tid);return P?P.m:null}
+function paintAv(el,av,name,fr){el.className=el.className.replace(/\s*\bfr-\S+/g,'')+' fr-'+(fr||'ink');const sp=el.querySelector('span');
+ if(av){el.style.backgroundImage='url("'+av+'")';if(sp)sp.textContent=''}else{el.style.backgroundImage='none';if(sp)sp.textContent=((name||'').trim().charAt(0)||'?').toUpperCase()}}
+function paintFriendAv(el,f){paintAv(el,'',f.n,f.f);let h=0;for(const ch of f.id)h=(h+ch.charCodeAt(0)*7)%360;el.style.backgroundColor='hsl('+h+' 55% 40%)';el.style.color='#fff'}
+/* perfil */
+function renderProfile(){const pf=S.pf;$('#pf_n').textContent=pf.n||'NOMBRE';$('#pf_n').style.opacity=pf.n?1:.45;$('#pf_u').textContent='@'+(pf.u||'username');$('#pf_u').style.opacity=pf.u?0.85:0.45;
+ paintAv($('#pf_a'),pf.av,pf.n,pf.fr);$('#pt_s').classList.toggle('on',PT=='s');$('#pt_i').classList.toggle('on',PT=='i');$('#pc_s').hidden=PT!='s';$('#pc_i').hidden=PT!='i';if(PT=='s')renderS();else renderI()}
+$('#pt_s').onclick=()=>{PT='s';renderProfile()};$('#pt_i').onclick=()=>{PT='i';renderProfile()};$('#pf_e').onclick=openPE;$('#pf_a').onclick=openPE;
+function renderS(){const b=$('#pc_s');b.innerHTML='';let p=MK('div','pn');
+ p.append(MK('h3',null,'Artistas favoritos'),MK('p','sub','Los que más te gustan'));const cw=MK('div');
+ S.pf.fa.forEach((a,i)=>{const c=MK('span','fa');c.append(MK('span',null,a));const x=MK('button',null,'✕');x.setAttribute('aria-label','Quitar '+a);x.onclick=()=>{S.pf.fa.splice(i,1);sv();renderS()};c.append(x);cw.append(c)});
+ if(!S.pf.fa.length)cw.append(MK('p','sub','Aún no agregas ninguno.'));p.append(cw);
+ if(S.pf.fa.length<6){const r=MK('div','addr'),inp=document.createElement('input');inp.placeholder='Nombre del artista';inp.maxLength=24;const bt=MK('button','b sm','+ AGREGAR');
+  const add=()=>{const v=inp.value.trim();if(!v)return;if(S.pf.fa.some(x=>x.toLowerCase()==v.toLowerCase()))return toast('Ya está en tu lista');S.pf.fa.push(v);sv();renderS()};bt.onclick=add;inp.onkeydown=e=>{if(e.key=='Enter')add()};r.append(inp,bt);p.append(r)}
+ b.append(p);
+ p=MK('div','pn');p.append(MK('h3',null,'Top 3 más escuchadas'));const ts=topSongs();
+ for(let i=0;i<3;i++){const r=MK('div','tp'),s=ts[i],tx=MK('div','tx');r.append(MK('span','rk',String(i+1)));if(s)tx.append(MK('b',null,s.t),MK('small',null,s.a+' · '+s.n+(s.n==1?' vez':' veces')));else tx.append(MK('b',null,'—'),MK('small',null,'Escucha canciones completas'));r.append(tx);p.append(r)}
+ b.append(p);
+ p=MK('div','pn');const g=MK('div','stats');[['Tiempo total',fmtT(S.tt)],['Monedas','🪙 '+S.coins]].forEach(([k,v])=>{const c=MK('div','st');c.append(MK('b',null,v),MK('small',null,k));g.append(c)});p.append(g,MK('p','sub','El tiempo cuenta desde la versión 1.4.'));b.append(p);
+ p=MK('div','pn');p.append(MK('h3',null,'Amigos'),MK('p','sub','Agrégalos escaneando su QR en persona'));
+ if(!S.fr.length)p.append(MK('p','sub','Aún no tienes amigos agregados.'));
+ S.fr.forEach(f=>{const r=MK('button','frd'),av=MK('div','pfp sm'),tx=MK('div','tx');av.append(MK('span'));paintFriendAv(av,f);tx.append(MK('b',null,f.n),MK('small',null,'@'+(f.u||'usuario')+' · '+fmtT(f.m*60)));r.append(av,tx);r.onclick=()=>openFriend(f.id);p.append(r)});
+ const row=MK('div','row');row.style.marginTop='10px';const q1=MK('button','b','MI QR'),q2=MK('button','b','ESCANEAR');q1.onclick=openMyQR;q2.onclick=openScan;row.append(q1,q2);p.append(row);b.append(p)}
+function trow(sw,title,sub,label,dis,fn){const r=MK('div','ir');if(sw){sw.classList.add('swt');r.append(sw)}const tx=MK('div','tx');tx.append(MK('b',null,title),MK('small',null,sub));r.append(tx);const x=MK('button','b',label);x.disabled=dis;x.onclick=fn;r.append(x);return r}
+function renderI(){const b=$('#pc_i');b.innerHTML='';const tabs=MK('div','tabs2');
+ [['temas','TEMAS'],['marcos','MARCOS'],['mascotas','MASCOTAS'],['insignias','INSIGNIAS']].forEach(([id,n])=>{const x=MK('button','ch'+(IT==id?' on':''),n);x.onclick=()=>{IT=id;renderI()};tabs.append(x)});b.append(tabs);
+ const tr=MK('button','ch trd','⇄ TRADEO · PRÓXIMAMENTE');tr.disabled=true;b.append(tr);const c=MK('div','pn');
+ if(IT=='temas'){c.append(MK('h3',null,'Mis temas'),MK('p','sub','Equipa los que ya tienes'));
+  const sw0=MK('div');sw0.style.background='linear-gradient(90deg,'+S.cfg.bg+' 25%,'+S.cfg.ac+' 25% 50%,'+S.cfg.ac2+' 50% 75%,'+S.cfg.ink+' 75%)';
+  c.append(trow(sw0,'Colores libres','Tu paleta de AJUSTES',S.tid==''?'EN USO':'USAR',S.tid=='',()=>{S.tid='';sv();theme();shop();cfgUI();renderI()}));
+  TH.filter(t=>S.ow.includes(t.id)).forEach(t=>{const sw=MK('div'),v=t.v;sw.style.background='linear-gradient(90deg,'+v.bg+' 25%,'+v.ac+' 25% 50%,'+v.ac2+' 50% 75%,'+v.ink+' 75%)';c.append(trow(sw,t.n,'Tema de pago',S.tid==t.id?'EN USO':'USAR',S.tid==t.id,()=>{S.tid=t.id;sv();theme();shop();cfgUI();renderI()}))});
+  if(!S.ow.length)c.append(MK('p','sub','Compra temas en la TIENDA (menú ⚫ arriba a la derecha).'))}
+ else if(IT=='marcos'){c.append(MK('h3',null,'Marcos de perfil'),MK('p','sub','Se desbloquean con insignias y temas'));const g=MK('div','grid3');
+  FRM.forEach(f=>{const ok=reqOK(f.req),cell=MK('button','cell'+(S.pf.fr==f.id?' sel2':'')+(ok?'':' lk')),av=MK('div','pfp sm');av.append(MK('span'));paintAv(av,S.pf.av,S.pf.n,f.id);
+   cell.append(av,MK('b',null,f.n),MK('small',null,ok?(S.pf.fr==f.id?'En uso':'Desbloqueado'):'🔒 '+reqTxt(f.req)));cell.onclick=()=>{if(!ok)return toast(reqTxt(f.req));S.pf.fr=f.id;sv();renderProfile()};g.append(cell)});c.append(g)}
+ else if(IT=='mascotas'){c.append(MK('h3',null,'Mascotas'),MK('p','sub','Elige quién te acompaña en la lista'));const g=MK('div','grid3');
+  const c0=MK('button','cell'+(S.mc==''?' sel2':''));c0.append(MK('b',null,'Según tema'),MK('small',null,S.mc==''?'En uso':'Usa la del tema'));c0.onclick=()=>{S.mc='';sv();theme();renderI()};g.append(c0);
+  CATM.forEach(m=>{const ok=reqOK(m.req),cell=MK('button','cell'+(S.mc==m.id?' sel2':'')+(ok?'':' lk')),im=document.createElement('img');im.alt='';im.src=m.m;cell.append(im,MK('b',null,m.n),MK('small',null,ok?(S.mc==m.id?'En uso':'Tuya'):'🔒 '+reqTxt(m.req)));
+   cell.onclick=()=>{if(!ok)return toast(reqTxt(m.req));S.mc=m.id;S.cfg.mas=true;keep(m);sv();theme();cfgUI();renderI()};g.append(cell)});c.append(g);
+  c.append(MK('p','sub','Más mascotas llegarán con nuevos temas y logros.'))}
+ else{c.append(MK('h3',null,'Insignias · '+S.bd.length+'/'+BDG.length));BDG.forEach(x=>{const got=S.bd.includes(x.id),r=MK('div','bd'+(got?'':' lk')),tx=MK('div','tx');tx.append(MK('b',null,x.n),MK('small',null,x.d));r.append(MK('div','md',got?'🏅':'🔒'),tx);c.append(r)})}
+ b.append(c)}
+/* editar perfil */
+function sq256(f,cb){const i=new Image,u=URL.createObjectURL(f);i.onload=()=>{URL.revokeObjectURL(u);const s=Math.min(i.width,i.height),c=document.createElement('canvas');c.width=c.height=256;c.getContext('2d').drawImage(i,(i.width-s)/2,(i.height-s)/2,s,s,0,0,256,256);cb(c.toDataURL('image/jpeg',.85))};i.onerror=()=>{URL.revokeObjectURL(u);cb(null)};i.src=u}
+function peAv(){paintAv($('#pe_a'),PEPH!==undefined?PEPH:S.pf.av,$('#pe_n').value||S.pf.n,S.pf.fr)}
+function openPE(){PEPH=undefined;$('#pe_n').value=S.pf.n;$('#pe_u').value=S.pf.u;peAv();$('#pe').hidden=false}
+$('#pe_n').oninput=peAv;$('#pe_u').oninput=e=>{const v=e.target.value.toLowerCase().replace(/[^a-z0-9_.]/g,'');if(v!=e.target.value)e.target.value=v};
+$('#pe_f').onclick=()=>$('#pe_file').click();
+$('#pe_file').onchange=e=>{const f=e.target.files[0];e.target.value='';if(f)sq256(f,d=>{if(d){PEPH=d;peAv()}else toast('No se pudo leer la imagen')})};
+$('#pe_x').onclick=()=>{PEPH='';peAv()};
+$('#pe_s').onclick=()=>{S.pf.n=$('#pe_n').value.trim().slice(0,20);S.pf.u=$('#pe_u').value.slice(0,20);if(PEPH!==undefined)S.pf.av=PEPH;sv();$('#pe').hidden=true;renderProfile();toast('Perfil guardado')};
+$('#pe_c').onclick=()=>$('#pe').hidden=true;$('#pe').onclick=e=>{if(e.target==e.currentTarget)e.currentTarget.hidden=true};
+/* QR: mi código */
+function myPayload(k){return 'SONP1|'+JSON.stringify({i:S.pf.id,n:S.pf.n,u:S.pf.u,a:S.pf.fa.slice(0,k+2).map(x=>x.slice(0,24)),t:topSongs().slice(0,k).map(x=>[x.t.slice(0,28),x.a.slice(0,20)]),m:Math.round((S.tt||0)/60),f:S.pf.fr})}
+function openMyQR(){if(!S.pf.n.trim()){toast('Primero ponle nombre a tu perfil');return openPE()}
+ let ok=false;for(const k of [3,2,1,0]){if(QR.draw($('#qm_c'),myPayload(k))){ok=true;break}}if(!ok)return toast('Tu perfil es demasiado largo para el QR');$('#qm').hidden=false}
+$('#qm_x').onclick=()=>$('#qm').hidden=true;$('#qm').onclick=e=>{if(e.target==e.currentTarget)e.currentTarget.hidden=true};
+/* QR: amigos */
+function parseFriend(raw){if(typeof raw!='string'||!raw.startsWith('SONP1|'))return null;let j;try{j=JSON.parse(raw.slice(6))}catch(e){return null}
+ if(!j||typeof j.i!='string'||j.i.length<4||j.i.length>24)return null;const s=(x,n)=>typeof x=='string'?x.slice(0,n):'';
+ return{id:s(j.i,24),n:s(j.n,20).trim()||'Sin nombre',u:s(j.u,20).replace(/[^a-z0-9_.]/gi,'').toLowerCase(),a:Array.isArray(j.a)?j.a.slice(0,6).map(x=>s(x,24)).filter(Boolean):[],t:Array.isArray(j.t)?j.t.slice(0,3).map(x=>Array.isArray(x)?[s(x[0],28),s(x[1],20)]:['','']):[],m:Math.max(0,Math.min(9999999,+j.m||0)),f:FRM.some(x=>x.id==j.f)?j.f:'ink',ts:Date.now()}}
+function addFriend(f){if(f.id==S.pf.id){toast('Ese QR es tuyo 😄');return false}const i=S.fr.findIndex(x=>x.id==f.id);
+ if(i>=0){S.fr[i]=f;toast('Perfil de '+f.n+' actualizado')}else{S.fr.push(f);toast('¡'+f.n+' ahora es tu amigo! Pídele que escanee tu QR también')}sv();chkBadges();if(VW=='f')renderProfile();return true}
+function gotCode(raw){const f=parseFriend(raw);if(!f){if(raw!==LASTBAD){LASTBAD=raw;toast('Ese QR no es de SON PLAYER')}return false}closeScan();addFriend(f);return true}
+function loadJsQR(){return new Promise((ok,no)=>{if(window.jsQR)return ok();const s=document.createElement('script');s.src='https://cdn.jsdelivr.net/npm/jsqr@1.4.0/dist/jsQR.js';s.onload=ok;s.onerror=()=>no(new Error('jsqr'));document.head.append(s)})}
+async function getDetector(){if('BarcodeDetector' in window){try{const f=await BarcodeDetector.getSupportedFormats();if(f.includes('qr_code'))return{d:new BarcodeDetector({formats:['qr_code']})}}catch(e){}}await loadJsQR();return{j:1}}
+async function decodeBitmap(bm){const dt=await getDetector();if(dt.d){const r=await dt.d.detect(bm);return r.length?r[0].rawValue:null}
+ const c=document.createElement('canvas');c.width=bm.width;c.height=bm.height;const x=c.getContext('2d',{willReadFrequently:true});x.drawImage(bm,0,0);const id=x.getImageData(0,0,c.width,c.height),r=jsQR(id.data,c.width,c.height);return r?r.data:null}
+async function openScan(){QSTOP=false;LASTBAD='';$('#qs').hidden=false;$('#qs_t').textContent='Apunta al QR de tu amigo';
+ let det;try{det=await getDetector()}catch(e){$('#qs_t').textContent='Necesito internet una vez para activar el lector de QR';return}
+ try{QST=await navigator.mediaDevices.getUserMedia({video:{facingMode:{ideal:'environment'}},audio:false})}catch(e){$('#qs_t').textContent='No pude abrir la cámara. Revisa el permiso o usa ELEGIR IMAGEN.';return}
+ if(QSTOP){QST.getTracks().forEach(t=>t.stop());QST=null;return}
+ const v=$('#qs_v');v.srcObject=QST;try{await v.play()}catch(e){}scanLoop(v,det)}
+const SCV=document.createElement('canvas'),SCX=SCV.getContext('2d',{willReadFrequently:true});
+async function scanLoop(v,det){while(!QSTOP&&!$('#qs').hidden){try{let raw=null;if(v.readyState>=2&&v.videoWidth){if(det.d){const r=await det.d.detect(v);if(r.length)raw=r[0].rawValue}else{const w=Math.min(640,v.videoWidth),hh=Math.round(w*v.videoHeight/v.videoWidth);SCV.width=w;SCV.height=hh;SCX.drawImage(v,0,0,w,hh);const id=SCX.getImageData(0,0,w,hh),r=jsQR(id.data,w,hh);if(r)raw=r.data}}if(raw&&gotCode(raw))return}catch(e){}await new Promise(r=>setTimeout(r,200))}}
+function closeScan(){QSTOP=true;try{QST&&QST.getTracks().forEach(t=>t.stop())}catch(e){}QST=null;$('#qs_v').srcObject=null;$('#qs').hidden=true}
+$('#qs_x').onclick=closeScan;$('#qs_i').onclick=()=>$('#qs_f').click();
+$('#qs_f').onchange=async e=>{const f=e.target.files[0];e.target.value='';if(!f)return;try{const raw=await decodeBitmap(await createImageBitmap(f));if(!raw)return toast('No encontré un QR en esa imagen');gotCode(raw)}catch(x){toast('No pude leer esa imagen')}};
+/* ficha de amigo */
+let FDC=null;
+function openFriend(id){const f=S.fr.find(x=>x.id==id);if(!f)return;FDC=id;const b=$('#fd2_b');b.innerHTML='';
+ const top=MK('div','phd2'),av=MK('div','pfp sm'),tx=MK('div');av.append(MK('span'));paintFriendAv(av,f);tx.append(MK('div','t',f.n),MK('div',null,'@'+(f.u||'usuario')));top.append(av,tx);b.append(top);
+ b.append(MK('h3',null,'Artistas favoritos'));const cw=MK('div');f.a.forEach(a=>cw.append(MK('span','fa',a)));if(!f.a.length)cw.append(MK('p','sub','No agregó ninguno.'));b.append(cw);
+ b.append(MK('h3',null,'Top 3'));for(let i=0;i<3;i++){const r=MK('div','tp'),s=f.t[i],t2=MK('div','tx');r.append(MK('span','rk',String(i+1)));if(s&&s[0])t2.append(MK('b',null,s[0]),MK('small',null,s[1]));else t2.append(MK('b',null,'—'));r.append(t2);b.append(r)}
+ b.append(MK('p','sub','Tiempo total: '+fmtT(f.m*60)+' · Actualizado: '+new Date(f.ts).toLocaleDateString('es')));
+ const d=$('#fd2_d');d.classList.remove('arm');d.textContent='ELIMINAR AMIGO';$('#fd2').hidden=false}
+$('#fd2_d').onclick=e=>{const b=e.currentTarget;if(!b.classList.contains('arm')){b.classList.add('arm');b.textContent='¿SEGURO?';setTimeout(()=>{b.classList.remove('arm');b.textContent='ELIMINAR AMIGO'},3000);return}
+ S.fr=S.fr.filter(x=>x.id!=FDC);sv();$('#fd2').hidden=true;renderProfile()};
+$('#fd2_x').onclick=()=>$('#fd2').hidden=true;$('#fd2').onclick=e=>{if(e.target==e.currentTarget)e.currentTarget.hidden=true};
+const VER='1.4';$('#lp').onclick=openSearch;$('#qx').onclick=closeSearch;$('#q').oninput=()=>list();$('#ver').textContent='SON PLAYER · versión '+VER;
 let IP,REG;addEventListener('beforeinstallprompt',e=>{e.preventDefault();IP=e;$('#inst').hidden=false});
 $('#inst').onclick=async()=>{if(!IP)return;IP.prompt();try{await IP.userChoice}catch(e){}IP=null;$('#inst').hidden=true};
 addEventListener('appinstalled',()=>$('#inst').hidden=true);
@@ -464,7 +683,7 @@ if('serviceWorker' in navigator&&/^https?:/.test(location.protocol)){const had=!
   r.addEventListener('updatefound',()=>{const w=r.installing;w&&w.addEventListener('statechange',()=>{if(w.state=='installed')ask(w)})});
   const chk=()=>r.update().catch(()=>{});document.addEventListener('visibilitychange',()=>{if(!document.hidden)chk()});setInterval(chk,3600000)}).catch(()=>{});
  navigator.serviceWorker.addEventListener('controllerchange',()=>{if(!had||rl)return;rl=1;location.reload()})}
-mergeTH();loadCat();theme();coins();shop();cfgUI();bar();list();
+mergeTH();loadCat();theme();coins();shop();cfgUI();bar();list();chkBadges();
 (async()=>{try{navigator.storage.persist()}catch(e){}
  try{const rs=(await tx('readonly',s=>s.getAll())).sort((a,b)=>a.o-b.o);L=rs.map(mk);
   const k=S.last?L.findIndex(t=>t.key==S.last.key):-1;

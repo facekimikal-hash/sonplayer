@@ -1,4 +1,4 @@
-const V='1.3.0',CORE='son-core-'+V,TEMAS='son-temas',EXT='son-ext';
+const V='1.4.0',CORE='son-core-'+V,TEMAS='son-temas',EXT='son-ext';
 const FILES=['./','./index.html','./manifest.json','./icon-192.png','./icon-512.png','./icon-maskable.png','./temas.json'];
 const JS='https://cdnjs.cloudflare.com/ajax/libs/jsmediatags/3.9.5/jsmediatags.min.js',FC='https://fonts.googleapis.com/css2?family=Bangers&family=Patrick+Hand&display=swap';
 self.addEventListener('install',e=>{e.waitUntil((async()=>{
@@ -14,7 +14,7 @@ self.addEventListener('fetch',e=>{const r=e.request;if(r.method!='GET')return;co
   if(/\/tema-[^/]+$/.test(u.pathname))return e.respondWith(first(r,TEMAS));
   if(/\/icon-[^/]+$/.test(u.pathname))return e.respondWith(first(r,CORE));
   return e.respondWith(net(r))}
- if(/cdnjs\.cloudflare\.com|fonts\.googleapis\.com|fonts\.gstatic\.com/.test(u.hostname))e.respondWith(swr(r,EXT))});
+ if(/cdnjs\.cloudflare\.com|cdn\.jsdelivr\.net|fonts\.googleapis\.com|fonts\.gstatic\.com/.test(u.hostname))e.respondWith(swr(r,EXT))});
 async function first(r,n){const c=await caches.open(n),m=await c.match(r);if(m)return m;const f=await fetch(r);if(f.ok)c.put(r,f.clone());return f}
 async function net(r){const c=await caches.open(CORE);try{const f=await Promise.race([fetch(r,{cache:'no-cache'}),new Promise((_,j)=>setTimeout(j,4000))]);if(f&&f.ok)c.put(r,f.clone());return f}
  catch(_){return (await c.match(r,{ignoreSearch:true}))||(r.mode=='navigate'?(await c.match('./index.html'))||(await c.match('./')):null)||Response.error()}}

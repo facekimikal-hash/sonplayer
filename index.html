@@ -135,7 +135,8 @@ main>section{height:100%;overflow-y:auto;padding:12px}
 .pre2{display:grid;grid-template-columns:1fr 1fr;gap:10px}
 .pre2 .ch{flex:none;width:100%;white-space:normal;line-height:1.1;padding:6px 10px}
 #bgi{display:none}body.bgi{background:none!important}body.bgi::before,body.bgi::after{display:none!important}body.bgi #bgi{display:block;position:fixed;inset:0;z-index:0;pointer-events:none;background:var(--bgimg) center/cover no-repeat}body.bgi #bgi::after{content:"";position:absolute;inset:0;background:var(--bg);opacity:var(--bga,.3)}
-.cpv{width:56px;height:56px;flex:none;border:3px solid var(--ink);background:var(--card) center/cover no-repeat;display:grid;place-items:center;font-size:22px}.rc .tb{left:0;top:0;bottom:0;width:58px;height:100%;object-fit:cover;border-right:3px solid var(--ink)}.rc.hi .n,.rc.hi .a{left:70px}.fcl{display:grid;gap:8px;margin-top:10px}.fcl input[type=range]{width:100%}
+.cpv{width:56px;height:56px;flex:none;border:3px solid var(--ink);background:var(--card) center/cover no-repeat;display:grid;place-items:center;font-size:22px}.rc .tb{left:0;top:0;bottom:0;width:58px;height:100%;object-fit:cover;border-right:3px solid var(--ink)}.rc.hi .n,.rc.hi .a{left:70px}.lrc{all:unset;box-sizing:border-box;display:block;padding:9px 11px;border:2px solid var(--ink);border-radius:12px;background:var(--card);color:var(--ink);cursor:pointer}.lrc b{display:block;font:19px/1.1 Bangers,Impact,sans-serif;letter-spacing:.5px}.lrc small{display:block;opacity:.75}.lrc i{display:block;font-style:normal;font-size:13px;opacity:.6;margin-top:3px;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+.fcl{display:grid;gap:8px;margin-top:10px}.fcl input[type=range]{width:100%}
 .eqr{display:grid;grid-template-columns:62px 1fr 56px;align-items:center;gap:8px;padding:2px 0}.eqr b{font:18px Bangers,Impact,sans-serif;letter-spacing:.5px}.eqr small{text-align:right;font-size:13px;opacity:.75}.eqo{opacity:.55}
 
 #mini{flex:none;position:relative;display:flex;align-items:center;gap:8px;padding:10px 10px 8px;border-top:3px solid var(--ink);background:var(--card)}
@@ -219,7 +220,7 @@ body.hm #toast{bottom:calc(150px + env(safe-area-inset-bottom,0px))}
 <div class="lyc" id="ly">Las letras aparecen aquí</div>
 <input type="range" id="sk" min="0" max="1000" value="0" aria-label="Posición"><div class="tm"><span id="cu">0:00</span><span id="du">0:00</span></div>
 <div class="cr"><button class="b rb" id="pv" aria-label="Anterior">⏮</button><button class="b rb big" id="pp" aria-label="Reproducir">▶</button><button class="b rb" id="nx" aria-label="Siguiente">⏭</button></div>
-<div class="row2b"><button class="b pill" id="fv" aria-label="Favorita">♡</button><button class="b pill" id="md">➜ ORDEN</button><button class="b pill" id="pl">☰ LISTAS</button><button class="b pill" id="ed" aria-label="Editar">✎</button></div>
+<div class="row2b"><button class="b pill" id="fv" aria-label="Favorita">♡</button><button class="b pill" id="md">➜ ORDEN</button><button class="b pill" id="pl">☰ LISTAS</button><button class="b pill" id="ed" aria-label="Editar">✎</button><button class="b pill" id="lq" aria-label="Buscar letra en internet">🔎</button></div>
 </div></section>
 
 <section id="l"><div id="pbar"></div><div id="sbx" hidden><input id="q" type="search" placeholder="Buscar canción, artista o álbum" enterkeyhint="search" autocomplete="off" aria-label="Buscar"><button class="b" id="qx" aria-label="Cerrar búsqueda">✕</button></div><div id="lst"></div><div class="side"><div id="tk"><div id="hdl">▲<br>▼</div></div><img id="mas" alt="" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="></div><input type="file" id="fi" accept="audio/*" multiple hidden><input type="file" id="fd" webkitdirectory multiple hidden></section>
@@ -255,6 +256,7 @@ body.hm #toast{bottom:calc(150px + env(safe-area-inset-bottom,0px))}
  <label>Letra (normal, o con tiempos como [00:12.50])<textarea id="el" rows="6"></textarea></label>
  <div class="row"><button class="b big" id="sv2">GUARDAR</button><button class="b" id="cn">CANCELAR</button></div><button class="b" id="dl" style="width:100%;margin-top:12px">ELIMINAR CANCIÓN</button>
 </div></div>
+<div class="ov" id="lr" hidden><div class="box dlg"><div class="t" style="font-size:26px">BUSCAR LETRA</div><p class="sub" id="lr_s" style="margin:6px 0"></p><div id="lr_l" class="ers" style="display:grid;gap:8px;margin:8px 0"></div><button class="b" id="lr_x" style="width:100%">CANCELAR</button></div></div>
 <div class="ov" id="pd" hidden onclick="if(event.target==this)this.hidden=true"><div class="box dlg"><div class="t" id="pdt" style="font-size:26px"></div><div id="pdl"></div><label>Crear lista nueva<input id="pnm" maxlength="30" placeholder="Nombre de la lista"></label><button class="b big" id="pa" style="width:100%">CREAR</button><button class="b" id="pdc" style="width:100%;margin-top:10px">CERRAR</button></div></div>
 <div class="ov" id="pe" hidden><div class="box dlg"><div class="t" style="font-size:26px">EDITAR PERFIL</div>
 <div style="display:flex;justify-content:center;margin:18px 0 14px"><div class="pfp" id="pe_a"><span></span></div></div>
@@ -378,7 +380,7 @@ function list(){const SQ=sq(),b=$('#lst'),q=SQ?search(SQ):vlist(V),nm=({all:'Tod
 function play(i,fq){if(!L[i])return;cur=i;if(!fq)BASE=L[i];A.src=L[i].u;S.last={key:L[i].key,t:0};sv();A.play().catch(()=>{});show()}
 function show(){const t=L[cur];if(!t)return;const x=T(t),im=$('#img');$('#fv').textContent=S.fv[t.key]?'♥':'♡';$('#pbg').style.backgroundImage=x.c?'url("'+x.c+'")':'none';$('#ti').textContent=x.t;$('#ar').textContent=x.a+(x.al?' · '+x.al:'');
  if(x.c){im.src=x.c;im.hidden=false;$('#ph').hidden=true}else{im.hidden=true;$('#ph').hidden=false}
- LY=parse(x.l||'');const b=$('#ly');b.innerHTML='';b.scrollTop=0;if(!LY.length)b.textContent='Sin letra. Toca ✎ para pegar una.';LY.forEach(l=>{const p=document.createElement('p');p.textContent=l.x;b.append(p)});
+ LY=parse(x.l||'');const b=$('#ly');b.innerHTML='';b.scrollTop=0;if(!LY.length)b.textContent='Sin letra. Toca 🔎 para buscarla o ✎ para pegar una.';LY.forEach(l=>{const p=document.createElement('p');p.textContent=l.x;b.append(p)});
  miniUI();list();try{navigator.mediaSession.metadata=new MediaMetadata({title:x.t,artist:x.a,album:x.al||'',artwork:x.c?[{src:x.c}]:[]})}catch(e){}}
 function parse(s){const r=[];let timed=false;for(const ln of s.split('\n')){const m=[...ln.matchAll(/\[(\d+):(\d+(?:\.\d+)?)\]/g)],tx=ln.replace(/\[[^\]]*\]/g,'').trim();if(m.length){timed=true;m.forEach(q=>r.push({s:+q[1]*60+ +q[2],x:tx}))}else if(tx)r.push({s:-1,x:tx})}return timed?r.filter(l=>l.s>=0).sort((a,b)=>a.s-b.s):r}
 
@@ -717,7 +719,26 @@ function leCov(){const p=S.pl.find(x=>x.id==V),v=$('#lcv');if(!p)return;v.style.
 $('#lcb').onclick=()=>$('#lcf').click();
 $('#lcf').onchange=e=>{const f=e.target.files[0];e.target.value='';const p=S.pl.find(x=>x.id==V);if(!f||!p)return;sq256(f,d=>{if(!d)return toast('No se pudo leer la imagen');p.img=d;sv();leCov();toast('Portada lista')})};
 $('#lcx').onclick=()=>{const p=S.pl.find(x=>x.id==V);if(p){delete p.img;sv();leCov()}};
-const VER='1.6.0';$('#lp').onclick=openSearch;$('#qx').onclick=closeSearch;$('#q').oninput=()=>list();$('#ver').textContent='SON PLAYER · versión '+VER;
+
+/* v1.7: buscar letra en internet (LRCLIB) */
+let LQN=0;
+const nrm=x=>(x||'').toLowerCase().normalize('NFD').replace(/[\u0300-\u036f]/g,'').replace(/\(.*?\)|\[.*?\]/g,' ').replace(/[^a-z0-9 ]/g,' ').replace(/\s+/g,' ').trim();
+async function lrGet(q){const c=new AbortController(),t=setTimeout(()=>c.abort(),9000);try{const r=await fetch('https://lrclib.net/api/search?'+q,{signal:c.signal});if(!r.ok)throw 0;const j=await r.json();return Array.isArray(j)?j:[]}finally{clearTimeout(t)}}
+async function lrFind(){if(cur<0)return toast('Elige una canción primero');if(!navigator.onLine)return toast('Necesitas internet para buscar la letra');
+ const t=L[cur],x=T(t),n=++LQN;$('#lr').hidden=false;$('#lr_s').textContent='Buscando…';$('#lr_l').innerHTML='';
+ const ti=x.t.replace(/\s*[\(\[].*?[\)\]]/g,'').trim()||x.t,ar=/^(desconocid|unknown|<)/i.test(x.a||'')?'':x.a,qs=[];
+ if(ar)qs.push('track_name='+encodeURIComponent(ti)+'&artist_name='+encodeURIComponent(ar));qs.push('track_name='+encodeURIComponent(ti));qs.push('q='+encodeURIComponent((ar?ar+' ':'')+ti));
+ let all=[];try{const rs=await Promise.allSettled(qs.map(lrGet));if(n!=LQN)return;let ok=0;rs.forEach(r=>{if(r.status=='fulfilled'){ok++;all=all.concat(r.value)}});if(!ok)throw 0}catch(e){if(n!=LQN)return;$('#lr_s').textContent='No pude conectarme. Revisa tu internet e inténtalo otra vez.';return}
+ const seen=new Set(),nt=nrm(ti),na=nrm(ar),d=A.duration||0;
+ let c=all.filter(r=>r&&(r.plainLyrics||r.syncedLyrics)&&!r.instrumental&&!seen.has(r.id)&&seen.add(r.id)).map(r=>{let sc=0;const rt=nrm(r.trackName),ra=nrm(r.artistName);if(rt==nt)sc+=4;else if(rt.includes(nt)||nt.includes(rt))sc+=1;if(na&&(ra==na))sc+=4;else if(na&&(ra.includes(na)||na.includes(ra)))sc+=2;if(d&&r.duration){const df=Math.abs(r.duration-d);sc+=df<=3?3:df<=8?1:0}if(r.syncedLyrics)sc+=.5;return{r,sc}}).filter(o=>o.sc>=1).sort((a,b)=>b.sc-a.sc).slice(0,8);
+ if(!c.length){$('#lr_s').textContent='No encontré letras para esta canción. Revisa que el título y artista estén bien (✎) o pégala a mano.';return}
+ const had=!!(S.meta[t.key]&&S.meta[t.key].l);$('#lr_s').textContent='Elige la correcta'+(had?' (reemplazará la letra actual)':'')+':';
+ c.forEach(({r})=>{const b=document.createElement('button');b.className='lrc';const a=document.createElement('b'),m=document.createElement('small'),p=document.createElement('i');a.textContent=r.trackName;
+  m.textContent=r.artistName+(r.albumName?' · '+r.albumName:'')+(r.duration?' · '+fmt(r.duration):'')+(r.syncedLyrics?' · ⏱ con tiempos':'');
+  p.textContent=((r.plainLyrics||r.syncedLyrics.replace(/\[[^\]]*\]/g,'')).split('\n').map(z=>z.trim()).filter(Boolean).slice(0,2).join(' / '));b.append(a,m,p);
+  b.onclick=()=>{S.meta[t.key]=Object.assign({},S.meta[t.key]||{t:t.t,a:t.a},{l:r.syncedLyrics||r.plainLyrics});sv();$('#lr').hidden=true;if(L[cur]&&L[cur].key==t.key)show();toast('Letra agregada')};$('#lr_l').append(b)})}
+$('#lq').onclick=lrFind;$('#lr_x').onclick=()=>{LQN++;$('#lr').hidden=true};
+const VER='1.7.0';$('#lp').onclick=openSearch;$('#qx').onclick=closeSearch;$('#q').oninput=()=>list();$('#ver').textContent='SON PLAYER · versión '+VER;
 let IP,REG;addEventListener('beforeinstallprompt',e=>{e.preventDefault();IP=e;$('#inst').hidden=false});
 $('#inst').onclick=async()=>{if(!IP)return;IP.prompt();try{await IP.userChoice}catch(e){}IP=null;$('#inst').hidden=true};
 addEventListener('appinstalled',()=>$('#inst').hidden=true);
